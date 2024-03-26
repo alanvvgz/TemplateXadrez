@@ -2,10 +2,10 @@
   "background_color": "#fff",
   "dir": "ltr",
   "display": "fullscreen",
-  "name": "alanvvgz.github",
+  "name": "Xadrez Online",
   "orientation": "any",
   "scope": "/",
-  "short_name": "alanvvgz.github",
+  "short_name": "XadOn",
   "start_url": "/",
   "theme_color": "#1e90ff",
   "icons": [
