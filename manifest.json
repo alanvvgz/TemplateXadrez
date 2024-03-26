@@ -20,6 +20,26 @@
       "sizes": "20x20"
     },
     {
+      "src": "assets/img/40ios.png",
+      "type": "image/png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "assets/img/64ios.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "assets/img/80ios.png",
+      "type": "image/png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "assets/img/100ios.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
       "src": "assets/img/180ios.png",
       "type": "image/png",
       "sizes": "180x180"
