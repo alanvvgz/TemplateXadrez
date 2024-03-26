@@ -1,13 +1,13 @@
 {
-  "background_color": "#ffffff",
+  "background_color": "#fff",
   "dir": "ltr",
-  "display": "standalone",
+  "display": "fullscreen",
   "name": "alanvvgz.github",
   "orientation": "any",
   "scope": "/",
   "short_name": "alanvvgz.github",
   "start_url": "/",
-  "theme_color": "#ffffff",
+  "theme_color": "#1e90ff",
   "icons": [
     {
       "src": "assets/img/32ios.png",
