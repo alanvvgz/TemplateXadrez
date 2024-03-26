@@ -29,6 +29,16 @@
       "type": "image/png",
       "sizes": "144x144"
     },
+    {
+      "src": "assets/img/android96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/img/android72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
      {
       "src": "assets/img/android48.png",
       "type": "image/png",
