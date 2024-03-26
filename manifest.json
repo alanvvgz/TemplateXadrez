@@ -15,6 +15,11 @@
       "sizes": "32x32"
     },
     {
+      "src": "assets/img/20ios.png",
+      "type": "image/png",
+      "sizes": "20x20"
+    },
+    {
       "src": "assets/img/180ios.png",
       "type": "image/png",
       "sizes": "180x180"
