@@ -1,1 +1,1 @@
-# TemplateXadrez
+# XadrezTemplate
