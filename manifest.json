@@ -38,7 +38,7 @@
       "src": "assets/img/100ios.png",
       "type": "image/png",
       "sizes": "100x100"
-      "purpose": "any maskable"
+      "purpose": "maskable"
     },
     {
       "src": "assets/img/180ios.png",
