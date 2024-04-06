@@ -423,6 +423,24 @@
 
   <script src="assets/js/main.js"></script>
 
+
+  <div id="lightSensorValue"></div>
+
+
+  <script>
+  if ('AmbientLightSensor' in window) {
+  const lightSensor = new AmbientLightSensor();
+
+  lightSensor.onreading = () => {
+    document.getElementById('lightSensorValue').textContent = `Nível de luz: ${lightSensor.illuminance}`;
+  };
+
+  lightSensor.start();
+} else {
+  document.getElementById('lightSensorValue').textContent = 'O sensor de luminosidade não é suportado neste navegador.';
+}
+</script>
+
 </body>
 
 </html>
