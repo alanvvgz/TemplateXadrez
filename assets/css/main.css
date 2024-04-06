@@ -2890,3 +2890,40 @@ section,
   color: var(--contrast-color);
   background-color: rgba(var(--accent-color-rgb), 0.8);
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn-primary {
+  background-color: #F07B3C;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #D56C3E;
+}
+
+.username-display {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.best-users-info {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F07B3C;
+  margin-bottom: 20px;
+}
+
+#lightSensorValue {
+  font-size: 18px;
+  color: #333;
+}
