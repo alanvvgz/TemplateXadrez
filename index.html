@@ -222,6 +222,27 @@
           </div>
 
         </div>
+        <div class="container">
+          <p class="best-users-info">Os melhores usuários do site</p>
+          <button id="generateUsernameBtn" class="btn-primary">Ver usuários</button>
+          <p id="usernameDisplay" class="username-display"></p>
+        </div>
+      
+      
+        <script>
+          const generateUsernameBtn = document.getElementById('generateUsernameBtn');
+          const usernameDisplay = document.getElementById('usernameDisplay');
+      
+          generateUsernameBtn.addEventListener('click', () => {
+            fetch('https://randomuser.me/api/')
+              .then(response => response.json())
+              .then(data => {
+                const username = data.results[0].login.username;
+                usernameDisplay.textContent = `Nome de Usuário: ${username}`;
+              })
+              .catch(error => console.error('Erro ao gerar nome de usuário:', error));
+          });
+        </script>
 
       </div>
 
