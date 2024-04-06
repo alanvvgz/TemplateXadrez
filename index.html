@@ -426,20 +426,25 @@
 
   <div id="lightSensorValue"></div>
 
-
   <script>
-  if ('AmbientLightSensor' in window) {
-  const lightSensor = new AmbientLightSensor();
+    window.addEventListener('devicelight', function(event) {
+      const ambientLightLevel = event.value; // Nível de luz ambiente em lux
 
-  lightSensor.onreading = () => {
-    document.getElementById('lightSensorValue').textContent = `Nível de luz: ${lightSensor.illuminance}`;
-  };
+      console.log('Nível de Luz Ambiente:', ambientLightLevel);
 
-  lightSensor.start();
-} else {
-  document.getElementById('lightSensorValue').textContent = 'O sensor de luminosidade não é suportado neste navegador.';
-}
-</script>
+      const minBrightness = 0.1; 
+      const maxBrightness = 1.0; 
+
+      const brightness = (ambientLightLevel - minBrightness) / (maxBrightness - minBrightness);
+
+      const adjustedBrightness = Math.max(Math.min(brightness, 1.0), 0.1);
+
+      document.body.style.opacity = adjustedBrightness;
+
+      document.getElementById('lightSensorValue').textContent = `Nível de Luz: ${ambientLightLevel} lux`;
+    });
+    
+  </script>
 
 </body>
 
